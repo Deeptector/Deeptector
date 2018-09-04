@@ -1,0 +1,10 @@
+*.data-00000-of-00001
+*.index
+*.meta
+*.avi
+*.MOV
+csv/
+*.csv
+__pycache__/
+*.weight
+checkpoint

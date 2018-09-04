@@ -1,2 +1,2 @@
 # Deeptector
-Real time action classification library
+Behavior detection project using RNN
