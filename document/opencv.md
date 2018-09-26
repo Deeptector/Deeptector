@@ -6,6 +6,7 @@
 #### 4. OpenCV 설치
 #### 5. 설치 확인
   
+  
 ## 1. 기존 버전 삭제
 기존에 OpenCV 3.4.0보다 낮은 버전이 설치되어 있다면 새로 설치하는 OpenCV 3.4.0 버전이 제대로 동작하지 않기 때문에 제거해야 합니다.
 
@@ -31,6 +32,7 @@ $ sudo apt-get purge  libopencv* python-opencv
 $ sudo apt-get autoremove
 ```
   
+  
 ## 2. 패키지 업그레이드
 기존에 설치된 패키지들을 업그레이드 해주는 작업입니다.  
 Ubuntu Repository로부터 패키지 리스트를 업데이트합니다.
@@ -43,58 +45,70 @@ $ sudo apt-get update
 $ sudo apt-get upgrade
 ```
   
+  
 ## 3. OpenCV required 패키지 설치
 ```sh
 $ sudo apt-get install build-essential cmake pkg-config libjpeg-dev libtiff5-dev libjasper-dev libpng12-dev libavcodec-dev libavformat-dev libswscale-dev libxvidcore-dev libx264-dev libxine2-dev libv4l-dev v4l-utils libgstreamer1.0-dev libgstreamlibqt4-dev er-plugins-base1.0-dev libqt4-dev mesa-utils libgl1-mesa-dri libqt4-opengl-dev libatlas-base-dev gfortran libeigen3-dev python2.7-dev python3-dev python-numpy python3-numpy qmake
 ```
-
-위 패키지에 관한 설명
+  
+  
+  - 위 패키지들에 관한 설명
+  
 ```sh
 build-essential cmake
 ```
 build-essential 패키지에는 C/C++ 컴파일러와 관련 라이브러리, make 같은 도구들이 포함되어 있습니다.  
 cmake는 컴파일 옵션이나 빌드된 라이브러리에 포함시킬 OpenCV 모듈 설정등을 위해 필요합니다.  
   
+  
 ```sh
 pkg-config
 ```
 pkg-config는 프로그램 컴파일 및 링크시 필요한 라이브러리에 대한 정보를 메타파일(확장자가 .pc 인 파일)로부터 가져오는데 사용됩니다.
+  
   
 ```sh
 libjpeg-dev libtiff5-dev libjasper-dev libpng12-dev
 ```
 특정 포맷의 이미지 파일을 불러오거나 기록하기 위해 필요한 패키지들입니다.  
   
+  
 ```sh
 libavcodec-dev libavformat-dev libswscale-dev libxvidcore-dev libx264-dev libxine2-dev
 ```
 특정 코덱의 비디오 파일을 읽어오거나 기록하기 위해 필요한 패키지들입니다  
+  
   
 ```sh
 libv4l-dev v4l-utils
 ```
 Video4Linux 패키지는 리눅스에서 실시간 비디오 캡처를 지원하기 위한 디바이스 드라이버와 API를 포함하고 있습니다.  
   
+  
 ```sh
 libgstreamer1.0-dev libgstreamer-plugins-base1.0-dev 
 ```
 OpenCV에서는 highgui 모듈을 사용하여 자체적으로 윈도우 생성하여 이미지나 비디오들을 보여줄 수 있습니다.  
+  
   
 ```sh
 mesa-utils libgl1-mesa-dri libqt4-opengl-dev 
 ```
 OpenGL 지원하기 위해 필요한 라이브러리입니다.  
   
+  
 ```sh
 libatlas-base-dev gfortran libeigen3-dev
 ```
 OpenCV 최적화를 위해 사용되는 라이브러리들입니다.
+  
   
 ```sh
 python2.7-dev python3-dev python-numpy python3-numpy
 ```
 python2.7-dev와 python3-dev 패키지는 OpenCV-Python 바인딩을 위해 필요한 패키지들입니다.  
 Numpy는 매트릭스 연산등을 빠르게 처리할 수 있어서 OpenCV에서 사용됩니다.  
+  
   
 ```sh
 libqt4-dev
@@ -128,7 +142,7 @@ opencv-3.4.0 에서 build 디렉토리를 생성하고 build 디렉토리로 이
 ~/opencv$ cd opencv-3.4.0/
 ~/opencv/opencv-3.4.0$ mkdir build
 ~/opencv/opencv-3.4.0$ cd build
-webnautes@webnautes-note:~/opencv/opencv-3.4.0/build$ 
+~/opencv/opencv-3.4.0/build$ 
 ```
   
 cmake를 사용하여 OpenCV 컴파일 설정을 해줍니다.
@@ -335,7 +349,7 @@ make 명령을 사용하여 컴파일을 진행합니다.
   
 ## 5. 설치 확인
   
-##### 1. C/C++
+#### 1. C/C++
   
 C/C++를 위해 OpenCV 라이브러리 사용가능 여부를 확인합니다.  
 문제 없으면 설치된 OpenCV 라이브러리의 버전이 출력됩니다. 
@@ -361,7 +375,7 @@ $ source ~/.bashrc
 ```
   
   
-##### 2. Python
+#### 2. Python
 python에서는 import를 통해 확인합니다.
 ```sh
 ~/opencv/opencv-3.4.0/build$ python3
