@@ -12,6 +12,7 @@ Deeptector는 Openpose를 통해 사람의 Feature를 뽑아낸 후 해당 데�
   
 또한 본 프로젝트는 Darknet 및 Openpose, Tensorflow와 같은 라이브러리를 GPU를 이용하여 사용하고 있습니다.
 [![Watch the video](https://img.youtube.com/vi/FrkhI3JcsXE/0.jpg)](https://www.youtube.com/watch?v=FrkhI3JcsXE)
+
 위 사진을 클릭하여 동영상을 확인할 수 있습니다.
   
   
