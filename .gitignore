@@ -1,3 +1,4 @@
 ouput.avi
 csv/
 deeptector.weight
+ - *.o
