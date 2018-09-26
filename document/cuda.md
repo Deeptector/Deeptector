@@ -12,9 +12,8 @@ CUDA 설치
 * CuDNN v5.1
 * NVIDIA CUDA Profiler Tools Interface
 
-------------------------
-
-####Nvidia 그래픽 드라이버 설치
+Nvidia 그래픽 드라이버 설치
+--------
 
 PC가 그래픽카드를 인식하게 하기 위해 그래픽 드라이버를 설치해야 합니다.
 
@@ -54,12 +53,12 @@ Wed Sep 26 17:11:42 2018
 </pre>
 <br/>
 
--------------------
-####CUDA Toolkit 8.0 설치
+CUDA Toolkit 8.0 설치
+--------
 
 [공식 다운로드 페이지(v8.0)](https://developer.nvidia.com/cuda-80-ga2-download-archive)에서 PC 운영체제에 맞는 파일을 다운로드합니다.
 본 프로젝트는 Ubuntu 16.04를 사용했기 때문에 Ubuntu 16.04의 <b>runfile(local)</b>을 다운로드 했습니다.
-![cuda install image](./img/cuda_screenshot1.JPG)
+![cuda install image](../img/cuda_screenshot1.JPG)
 <br/>
 
 다운로드 완료 후 터미널에서 다음 명령어를 실행합니다.
@@ -131,17 +130,19 @@ $ which nvcc
 </pre>
 <br/>
 
----------------
-#### cuDNN v5.1 설치
+
+cuDNN v5.1 설치
+--------
 [공식 다운로드 페이지](https://developer.nvidia.com/rdp/cudnn-archive)에서 회원가입 후 cuDNN을 다운로드 가능합니다.
 여러 가지 파일들 중 <b>cuDNN v5.1 for CUDA 8.0</b>의 cuDNN v5.1 Library for Linux를 선택하여 다운로드 받습니다. (파일명: `cudnn-8.0-linux-x64-v5.1.tgz`)
-![cudnn install image](./img/cudnn_screenshot1.JPG)
+![cudnn install image](../img/cudnn_screenshot1.JPG)
 <br/>
 
 다운로드 받은 디렉토리에서 다음 명령어로 받은 파일의 압축을 풉니다.
 <pre>
 $ tar xzvf cudnn-8.0-linux-x64-v5.1.tgz
 </pre>
+
 <br/>
 `$ which nvcc`로 폴더 위치 확인 후 해당 폴더에 압축 해제한 파일을 복사하고 권한을 변경합니다.
 <pre>
@@ -169,8 +170,8 @@ $ cat /usr/local/cuda/include/cudnn.h | grep CUDNN_MAJOR -A 2
 ...
 </pre>
 
---------------
-####NVIDIA CUDA Profiler Tools Interface
+NVIDIA CUDA Profiler Tools Interface
+--------
 
 마지막으로 다음 명령어를 입력하여 필요한 패키지를 설치합니다.
 <pre>
@@ -178,7 +179,7 @@ $ sudo apt-get install libcupti-dev
 </pre>
 
 <br/>
-######참고 사이트
+#### 참고 사이트
 * http://qiita.com/JeJeNeNo/items/05e148a325192004e2cd
 * http://stackoverflow.com/questions/31326015/how-to-verify-cudnn-installation
 * http://ejklike.github.io/2017/03/06/install-tensorflow1.0-on-ubuntu16.04-1.html
