@@ -182,3 +182,7 @@ $ sudo apt-get install libcupti-dev
 <br/>
 
 #### 참고 사이트
+
+* http://qiita.com/JeJeNeNo/items/05e148a325192004e2cd
+* http://stackoverflow.com/questions/31326015/how-to-verify-cudnn-installation
+* http://ejklike.github.io/2017/03/06/install-tensorflow1.0-on-ubuntu16.04-1.html
