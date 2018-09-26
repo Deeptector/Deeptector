@@ -49,29 +49,59 @@ $ sudo apt-get install build-essential cmake pkg-config libjpeg-dev libtiff5-dev
 ```
 
 위 패키지에 관한 설명
-    build-essential cmake
+```sh
+build-essential cmake
+```
 build-essential 패키지에는 C/C++ 컴파일러와 관련 라이브러리, make 같은 도구들이 포함되어 있습니다.  
 cmake는 컴파일 옵션이나 빌드된 라이브러리에 포함시킬 OpenCV 모듈 설정등을 위해 필요합니다.  
-    pkg-config
-pkg-config는 프로그램 컴파일 및 링크시 필요한 라이브러리에 대한 정보를 메타파일(확장자가 .pc 인 파일)로부터 가져오는데 사용됩니다.  
-    libjpeg-dev libtiff5-dev libjasper-dev libpng12-dev
+  
+```sh
+pkg-config
+```
+pkg-config는 프로그램 컴파일 및 링크시 필요한 라이브러리에 대한 정보를 메타파일(확장자가 .pc 인 파일)로부터 가져오는데 사용됩니다.
+  
+```sh
+libjpeg-dev libtiff5-dev libjasper-dev libpng12-dev
+```
 특정 포맷의 이미지 파일을 불러오거나 기록하기 위해 필요한 패키지들입니다.  
-    libavcodec-dev libavformat-dev libswscale-dev libxvidcore-dev libx264-dev libxine2-dev
+  
+```sh
+libavcodec-dev libavformat-dev libswscale-dev libxvidcore-dev libx264-dev libxine2-dev
+```
 특정 코덱의 비디오 파일을 읽어오거나 기록하기 위해 필요한 패키지들입니다  
-    libv4l-dev v4l-utils
+  
+```sh
+libv4l-dev v4l-utils
+```
 Video4Linux 패키지는 리눅스에서 실시간 비디오 캡처를 지원하기 위한 디바이스 드라이버와 API를 포함하고 있습니다.  
-    libgstreamer1.0-dev libgstreamer-plugins-base1.0-dev 
+  
+```sh
+libgstreamer1.0-dev libgstreamer-plugins-base1.0-dev 
+```
 OpenCV에서는 highgui 모듈을 사용하여 자체적으로 윈도우 생성하여 이미지나 비디오들을 보여줄 수 있습니다.  
-    mesa-utils libgl1-mesa-dri libqt4-opengl-dev 
+  
+```sh
+mesa-utils libgl1-mesa-dri libqt4-opengl-dev 
+```
 OpenGL 지원하기 위해 필요한 라이브러리입니다.  
-    libatlas-base-dev gfortran libeigen3-dev
+  
+```sh
+libatlas-base-dev gfortran libeigen3-dev
+```
 OpenCV 최적화를 위해 사용되는 라이브러리들입니다.
-    python2.7-dev python3-dev python-numpy python3-numpy
+  
+```sh
+python2.7-dev python3-dev python-numpy python3-numpy
+```
 python2.7-dev와 python3-dev 패키지는 OpenCV-Python 바인딩을 위해 필요한 패키지들입니다.  
 Numpy는 매트릭스 연산등을 빠르게 처리할 수 있어서 OpenCV에서 사용됩니다.  
-윈도우 생성 등의 GUI를 위해 gtk 또는 qt를 선택해서 사용가능합니다.  
-    libqt4-dev    
-여기서는 qt4를 지정해주었습니다. QImage와 Mat 간의 변환에는 영향을 주지 않습니다.  
+  
+```sh
+libqt4-dev
+```
+윈도우 생성 등의 GUI를 위해 gtk 또는 qt를 선택해서 사용가능합니다.
+  
+  
   
 ## 4. OpenCV 설치
 소스코드를 설치할 디렉토리를 생성한 후 진행합니다.
