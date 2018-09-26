@@ -1,10 +1,3 @@
-*.data-00000-of-00001
-*.index
-*.meta
-*.avi
-*.MOV
+ouput.avi
 csv/
-*.csv
-__pycache__/
-*.weight
-checkpoint
+deeptector.weight
