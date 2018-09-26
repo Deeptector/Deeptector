@@ -12,6 +12,7 @@ CUDA 설치
 * CuDNN v5.1
 * NVIDIA CUDA Profiler Tools Interface
 
+<br/>
 Nvidia 그래픽 드라이버 설치
 --------
 
@@ -179,6 +180,7 @@ $ sudo apt-get install libcupti-dev
 </pre>
 
 <br/>
+
 #### 참고 사이트
 * http://qiita.com/JeJeNeNo/items/05e148a325192004e2cd
 * http://stackoverflow.com/questions/31326015/how-to-verify-cudnn-installation
