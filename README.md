@@ -61,7 +61,7 @@ Makefile을 만들기 위해 편집기를 이용하여 deeptector.pro 파일을 
 ```sh
 $ vi deeptector.pro
 ```
-vi 편집기 화면이 갱신되면 <username>을 사용자 username으로 변경합니다.
+vi 편집기 화면이 갱신되면 &#60;username&#62;을 사용자 username으로 변경합니다.
 ```sh
 :%s/<username>/사용자username
 ```
