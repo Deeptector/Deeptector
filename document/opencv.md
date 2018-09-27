@@ -6,7 +6,7 @@
 #### 4. OpenCV 설치
 #### 5. 설치 확인
   
-  
+  <br/>
 ## 1. 기존 버전 삭제
 기존에 OpenCV 3.4.0보다 낮은 버전이 설치되어 있다면 새로 설치하는 OpenCV 3.4.0 버전이 제대로 동작하지 않기 때문에 제거해야 합니다.
 
@@ -32,7 +32,7 @@ $ sudo apt-get purge  libopencv* python-opencv
 $ sudo apt-get autoremove
 ```
   
-  
+  <br/>
 ## 2. 패키지 업그레이드
 기존에 설치된 패키지들을 업그레이드 해주는 작업입니다.  
 Ubuntu Repository로부터 패키지 리스트를 업데이트합니다.
@@ -45,13 +45,13 @@ $ sudo apt-get update
 $ sudo apt-get upgrade
 ```
   
-  
+  <br/>
 ## 3. OpenCV required 패키지 설치
 ```sh
 $ sudo apt-get install build-essential cmake pkg-config libjpeg-dev libtiff5-dev libjasper-dev libpng12-dev libavcodec-dev libavformat-dev libswscale-dev libxvidcore-dev libx264-dev libxine2-dev libv4l-dev v4l-utils libgstreamer1.0-dev libgstreamlibqt4-dev er-plugins-base1.0-dev libqt4-dev mesa-utils libgl1-mesa-dri libqt4-opengl-dev libatlas-base-dev gfortran libeigen3-dev python2.7-dev python3-dev python-numpy python3-numpy qmake
 ```
   
-  
+  <br/>
   - 위 패키지들에 관한 설명
   
 ```sh
@@ -60,63 +60,63 @@ build-essential cmake
 build-essential 패키지에는 C/C++ 컴파일러와 관련 라이브러리, make 같은 도구들이 포함되어 있습니다.  
 cmake는 컴파일 옵션이나 빌드된 라이브러리에 포함시킬 OpenCV 모듈 설정등을 위해 필요합니다.  
   
-  
+  <br/>
 ```sh
 pkg-config
 ```
 pkg-config는 프로그램 컴파일 및 링크시 필요한 라이브러리에 대한 정보를 메타파일(확장자가 .pc 인 파일)로부터 가져오는데 사용됩니다.
   
-  
+  <br/>
 ```sh
 libjpeg-dev libtiff5-dev libjasper-dev libpng12-dev
 ```
 특정 포맷의 이미지 파일을 불러오거나 기록하기 위해 필요한 패키지들입니다.  
   
-  
+  <br/>
 ```sh
 libavcodec-dev libavformat-dev libswscale-dev libxvidcore-dev libx264-dev libxine2-dev
 ```
 특정 코덱의 비디오 파일을 읽어오거나 기록하기 위해 필요한 패키지들입니다  
   
-  
+  <br/>
 ```sh
 libv4l-dev v4l-utils
 ```
 Video4Linux 패키지는 리눅스에서 실시간 비디오 캡처를 지원하기 위한 디바이스 드라이버와 API를 포함하고 있습니다.  
   
-  
+  <br/>
 ```sh
 libgstreamer1.0-dev libgstreamer-plugins-base1.0-dev 
 ```
 OpenCV에서는 highgui 모듈을 사용하여 자체적으로 윈도우 생성하여 이미지나 비디오들을 보여줄 수 있습니다.  
   
-  
+  <br/>
 ```sh
 mesa-utils libgl1-mesa-dri libqt4-opengl-dev 
 ```
 OpenGL 지원하기 위해 필요한 라이브러리입니다.  
   
-  
+  <br/>
 ```sh
 libatlas-base-dev gfortran libeigen3-dev
 ```
 OpenCV 최적화를 위해 사용되는 라이브러리들입니다.
   
-  
+  <br/>
 ```sh
 python2.7-dev python3-dev python-numpy python3-numpy
 ```
 python2.7-dev와 python3-dev 패키지는 OpenCV-Python 바인딩을 위해 필요한 패키지들입니다.  
 Numpy는 매트릭스 연산등을 빠르게 처리할 수 있어서 OpenCV에서 사용됩니다.  
   
-  
+  <br/>
 ```sh
 libqt4-dev
 ```
 윈도우 생성 등의 GUI를 위해 gtk 또는 qt를 선택해서 사용가능합니다.
   
   
-  
+<br/>
 ## 4. OpenCV 설치
 소스코드를 설치할 디렉토리를 생성한 후 진행합니다.
 ```sh
@@ -173,7 +173,7 @@ $ cmake -D CMAKE_BUILD_TYPE=RELEASE \
 ```sh
 -- Configuring done
 -- Generating done
--- Build files have been written to: /home/<username>/opencv/opencv-3.4.0/build
+-- Build files have been written to: /home/&#60;username&#62;/opencv/opencv-3.4.0/build
 ```
   
 cmake 실행 결과 문구입니다.
@@ -182,7 +182,7 @@ cmake 실행 결과 문구입니다.
 --   Version control:               unknown
 -- 
 --   Extra modules:
---     Location (extra):            /home/<username>/opencv/opencv_contrib-3.4.0/modules
+--     Location (extra):            /home/&#60;username&#62;/opencv/opencv_contrib-3.4.0/modules
 --     Version control (extra):     unknown
 -- 
 --   Platform:
@@ -274,7 +274,7 @@ cmake 실행 결과 문구입니다.
 --   NVIDIA CUDA:                   NO
 -- 
 --   OpenCL:                        YES (no extra features)
---     Include path:                /home/<username>/opencv/opencv-3.4.0/3rdparty/include/opencl/1.2
+--     Include path:                /home/&#60;username&#62;/opencv/opencv-3.4.0/3rdparty/include/opencl/1.2
 --     Link libraries:              Dynamic load
 -- 
 --   Python 2:
@@ -304,7 +304,7 @@ cmake 실행 결과 문구입니다.
 -- 
 -- Configuring done
 -- Generating done
--- Build files have been written to: /home/<username>/opencv/opencv-3.4.0/build
+-- Build files have been written to: /home/&#60;username&#62;/opencv/opencv-3.4.0/build
 ```
   
 컴파일을 싱글코어로 진행할 경우 오래걸리기 때문에 사용중인 컴퓨터의 CPU 코어의 갯수를 확인합니다.
@@ -346,7 +346,7 @@ make 명령을 사용하여 컴파일을 진행합니다.
 ~/opencv/opencv-3.4.0/build$ sudo ldconfig
 ```
   
-  
+<br/>
 ## 5. 설치 확인
   
 #### 1. C/C++
@@ -374,7 +374,7 @@ $ sudo sh -c 'echo export PKG_CONFIG_PATH >> /etc/bash.bashrc'
 $ source ~/.bashrc
 ```
   
-  
+<br/>
 #### 2. Python
 python에서는 import를 통해 확인합니다.
 ```sh
