@@ -98,11 +98,47 @@ vi 편집기 화면이 갱신되면 &#60;username&#62;을 사용자 username으�
 > 자신만의 모델을 작성하고, 데이터를 전처리 하고 학습시켜 자신만의 소프트웨어로의 발전 가능합니다.
 
 ## 4. 사용법
+#### Action Classification
+  - 행동을 분류하기 위한 메뉴
+```sh
+./deeptector [Input Type] [Input Path or URL] [Config File] [Weight File]
+```
+##### [Input Type]
+![input type image](../img/input type.png)
+
+<br/>
+
+##### [Input Path or URL]
+![input path or url image](../img/input path or url.png)
+
+<br/>
+
+##### [Config File]
+  - Human Pose config File
+> 기본적으로 deeptector.cfg 파일을 제공하며 Openpose를 Darknet에서 재구성 하기 위한 Config file이다. 다른 Human Pose 라이브러리로 재구성 할 경우 모델을 작성해서 파일을 변경해주면 된다.
+
+<br/>
+
+##### [Weight File]
+  - Human Pose Weight File
+>  기본적으로 deeptector.weight 파일을 제공하며 Openpose를 Darknet에서 동작하기 위한 Weight 파일이다. Config 파일과 마찬가지로 다른 Human Pose 라이브러리로 재구성을 원할 경우 해당 모델로 학습되어진 Weight 파일로 변경해주어야 한다.
+
+<br/>
+
+#### Feature Extract
+  - 데이터 Customizing을 위한 Feature 추출 메뉴
+```sh
+./deeptector train [Traning Data Folder Path] [Config File] [Weight File]
+```
+##### [Traning Data Folder Path]
+> Customizing을 하기 위해선 Human Pose 라이브러리를 통해 Feature를 추출해 다른 모델로 학습을 시켜야 한다. 따라서 Openpose 기반의 스켈레톤 데이터를 추출한 결과를 csv 형태로 제공한다. data 폴더에 감지하고자 하는 행동의 이름으로 폴더를 생성한 후 폴더이름을 적어주면 된다
+
+![traning data folder path](../img/traning data folder path.png)
 
 <br/>
 <br/>
 
-## 4. 사용법
+## 5. Demo
 
 <br/>
 <br/>
