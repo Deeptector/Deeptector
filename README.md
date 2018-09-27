@@ -104,12 +104,12 @@ vi 편집기 화면이 갱신되면 &#60;username&#62;을 사용자 username으�
 ./deeptector [Input Type] [Input Path or URL] [Config File] [Weight File]
 ```
 ##### [Input Type]
-![input type image](../img/input type.png)
+![input type image](img/input type.png)
 
 <br/>
 
 ##### [Input Path or URL]
-![input path or url image](../img/input path or url.png)
+![input path or url image](img/input path or url.png)
 
 <br/>
 
@@ -133,7 +133,7 @@ vi 편집기 화면이 갱신되면 &#60;username&#62;을 사용자 username으�
 ##### [Traning Data Folder Path]
 > Customizing을 하기 위해선 Human Pose 라이브러리를 통해 Feature를 추출해 다른 모델로 학습을 시켜야 한다. 따라서 Openpose 기반의 스켈레톤 데이터를 추출한 결과를 csv 형태로 제공한다. data 폴더에 감지하고자 하는 행동의 이름으로 폴더를 생성한 후 폴더이름을 적어주면 된다
 
-![traning data folder path](../img/traning data folder path.png)
+![traning data folder path](img/traning data folder path.png)
 
 <br/>
 <br/>
