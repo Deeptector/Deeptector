@@ -1,7 +1,6 @@
 
 # 우분투 16.04에 텐서플로 1.0 설치하기(Anaconda, Bazel 설치)
 
-<br/><br/>
 ## 1. Anaconda Python 3.6 설치
 
 [공식 다운로드 페이지](https://www.anaconda.com/download/)에서 파이썬 3.6 버전의 64비트 installer를 다운받은 뒤 아래의 명령어로 설치해주십시오.
@@ -72,6 +71,7 @@ $ cd tensorflow
 
 >만약 **master** 소스코드 대신 **r1.0** 버전 소스코드로 컴파일하고 싶으시다면 **git checkout r1.0**을 입력해주시면 됩니다.
 
+<br/><br/>
 ### 3-1 설정 입력
 **tensorflow** 폴더에서 아래와 같이 ./configure 라고 입력 하시면 파이썬이나 CUDA, cuDNN의 경로 등에 대해서 물을겁니다.  
 이때 **y**나 **n** 입력에 주의가 필요하고, 이전에 설치한 경로와 다른 경로가 **Default** 설정으로 뜬다면 이전에 설치한 경로를 입력해주시면 됩니다. (예: /usr/local/cuda-8.0)
@@ -107,6 +107,7 @@ Please note that each additional compute capability significantly increases your
 [Default is: "3.5,5.2"]:
 ```
 
+<br/><br/>
 ### 3-2 pip 패키지 빌드
 아래 명령어를 입력하여 텐서플로 GPU 버전 패키지를 빌드해주십시오. RAM을 많이 잡아먹는다고 하니, 램 용량이 적다면 아래 명령어 뒤에 **--local_resources 2048,.5,1.0** 옵션을 붙여주십시오. 32GB 기준으로 약 15분이 소요됩니다.
 ```sh
@@ -121,6 +122,7 @@ INFO: Elapsed time: 868.698s, Critical Path: 661.03s
 $ bazel-bin/tensorflow/tools/pip_package/build_pip_package /tmp/tensorflow_pkg
 ```
 
+<br/><br/>
 ### 3-3 pip 패키지 설치
 아래와 같이 터미널에 입력하되, 별표시 이전까지만 입력하고 **tab** 키를 누르자. 나머지 파일명이 자동완성된다. (빌드되는 파일명이 일정하지 않아 이렇게 해야된다.)
 
@@ -134,6 +136,7 @@ $ pip install /tmp/tensorflow_pkg/tensorflow*
 $ cp /usr/lib/x86_64-linux-gnu/libstdc++.so.6 /home/your_id/anaconda3/lib/
 ```
 
+<br/><br/>
 ### 3-4 테스트
 파이썬에서 아래와 같이 설치 테스트를 해주십시오.
 * 텐서플로 불러오기 : 아래와 같이 CUDA 라이브러리를 잘 불러오면 성공입니다.
