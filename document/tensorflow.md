@@ -1,6 +1,7 @@
 
 # 우분투 16.04에 텐서플로 1.0 설치하기(Anaconda, Bazel 설치)
 
+<br/><br/>
 ## 1. Anaconda Python 3.6 설치
 
 [공식 다운로드 페이지](https://www.anaconda.com/download/)에서 파이썬 3.6 버전의 64비트 installer를 다운받은 뒤 아래의 명령어로 설치해주십시오.
@@ -28,6 +29,7 @@ Type "help", "copyright", "credits" or "license" for more information.
 $ pip install dev
 ```
 
+<br/><br/>
 ## 2. Bazel 설치
 [바젤 설치문서](https://docs.bazel.build/versions/master/install.html)를 참고하였습니다. 먼저 JDK 8을 설치해주시면 됩니다.
 
@@ -55,6 +57,7 @@ Build label: 0.4.4
 > 2017년 8월 12일 기준으로 Bazel 최신 버전(0.5.3)에서 tensorflow 패키지 빌드 오류가 보고된 사례를 수 차례 발견되었습니다.
 > 혹시 다음 내용에서 **패키지 Build**시 이러한 오류를 접한다면, Bazel 최신 버전이 아닌 0.5.2버전을 설치해주십시오.
 
+<br/><br/>
 
 ## 3. Tensorflow 설치 (from Github)
 
@@ -104,7 +107,7 @@ Please note that each additional compute capability significantly increases your
 [Default is: "3.5,5.2"]:
 ```
 
-### 2-2 pip 패키지 빌드
+### 3-2 pip 패키지 빌드
 아래 명령어를 입력하여 텐서플로 GPU 버전 패키지를 빌드해주십시오. RAM을 많이 잡아먹는다고 하니, 램 용량이 적다면 아래 명령어 뒤에 **--local_resources 2048,.5,1.0** 옵션을 붙여주십시오. 32GB 기준으로 약 15분이 소요됩니다.
 ```sh
 $ bazel build --config=opt --config=cuda //tensorflow/tools/pip_package:build_pip_package
@@ -118,7 +121,7 @@ INFO: Elapsed time: 868.698s, Critical Path: 661.03s
 $ bazel-bin/tensorflow/tools/pip_package/build_pip_package /tmp/tensorflow_pkg
 ```
 
-### 2-3 pip 패키지 설치
+### 3-3 pip 패키지 설치
 아래와 같이 터미널에 입력하되, 별표시 이전까지만 입력하고 **tab** 키를 누르자. 나머지 파일명이 자동완성된다. (빌드되는 파일명이 일정하지 않아 이렇게 해야된다.)
 
 ```sh
@@ -131,7 +134,7 @@ $ pip install /tmp/tensorflow_pkg/tensorflow*
 $ cp /usr/lib/x86_64-linux-gnu/libstdc++.so.6 /home/your_id/anaconda3/lib/
 ```
 
-### 2-4 테스트
+### 3-4 테스트
 파이썬에서 아래와 같이 설치 테스트를 해주십시오.
 * 텐서플로 불러오기 : 아래와 같이 CUDA 라이브러리를 잘 불러오면 성공입니다.
 ```sh
