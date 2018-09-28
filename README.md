@@ -61,11 +61,11 @@ Makefile을 만들기 위해 편집기를 이용하여 deeptector.pro 파일을 
 ```sh
 $ vi deeptector.pro
 ```
-vi 편집기 화면이 갱신되면 &#60;username&#62;을 사용자 username으로 변경합니다.
+vi 편집기 화면이 갱신되면 &#60;darknet_folder_path&#62;을 사전 설치 프로그램 4번의 Darknet 폴더 Path로 설정해줍니다.
 ```sh
-:%s/<username>/사용자username
+:%s/<darknet_folder_path>/your darknet folder path
 ```
-다른 편집기의 사용도 가능합니다. deeptector.pro 파일의 <username>을 사용자의 username으로 변경합니다.
+다른 편집기의 사용도 가능합니다. deeptector.pro 파일의 &#60;darknet_folder_path&#62;을 사용자의 Darknet 폴더 Path 변경합니다.
 
 <br/>
 
