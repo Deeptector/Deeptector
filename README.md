@@ -39,7 +39,7 @@
 
 <br/>
 
-<img width="200" src="https://user-images.githubusercontent.com/30898520/46716541-67e92880-cc9f-11e8-8e61-edf5adc0045c.png">
+<img width="800" src="https://user-images.githubusercontent.com/30898520/46716541-67e92880-cc9f-11e8-8e61-edf5adc0045c.png">
 
 <br/>
 
