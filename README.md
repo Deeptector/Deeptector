@@ -58,7 +58,7 @@ CCTV나 IP 카메라와 연결된 RTSP 서버는 딥 러닝 서버와 클라이�
 
 <br/>
 
-![input type image](img/useage)
+<img width="700" src="https://user-images.githubusercontent.com/30898520/46716638-d4fcbe00-cc9f-11e8-9105-f93e793de32a.png">
 
 <br/>
 
