@@ -39,7 +39,7 @@ Deeptector는 Openpose를 통해 사람의 Feature를 뽑아낸 후 해당 데�
   - [1. Nvidia Driver 및 Cuda, Cudnn](https://github.com/Deeptector/Deeptector/blob/master/document/cuda.md)
   - [2. OpenCV 3.4.0](https://github.com/Deeptector/Deeptector/blob/master/document/opencv.md)
   - [3. Python 및 Tensorflow](https://github.com/Deeptector/Deeptector/blob/master/document/tensorflow.md)
-  - [4. Darknet](https://github.com/Deeptector/Deeptector/blob/master/document/darknet.md)
+  - [4. Darknet](https://github.com/Deeptector/Darknet/blob/master/README.md)
   
 <br/>
 
