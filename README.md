@@ -138,14 +138,9 @@ vi 편집기 화면이 갱신되면 &#60;darknet_folder_path&#62;을 사전 설�
 <br/>
 <br/>
 
-## 5. Demo
+## 5. Demo 프로젝트
 
-#### 5.1 Demo 설명
-
-  
-<br/>
-
-#### 5.2 Demo 프로젝트 관련 링크
+#### 5.1 Demo 프로젝트 관련 링크
 
 - <a href="https://github.com/Deeptector/Deeptector/tree/deeptector_example">Deeptector_Server</a>
 - <a href="https://github.com/Deeptector/Deeptector_Client_Android">Deeptector_Client_Android</a>
